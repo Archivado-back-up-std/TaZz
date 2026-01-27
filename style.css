@@ -8,9 +8,9 @@
     --bento-shadow: rgba(76, 144, 201, 0.15);
     --text-dark: #1a3a52;
     --text-light: #5a7a92;
-    --success: #07f4a5;
+    --success: #348312;
     --warning: #ffd93d;
-    --danger: #f90456;
+    --danger: #D80300;
 }
 
 * {
@@ -173,7 +173,7 @@ tbody td {
 }
 
 .dias-restantes.finalizado {
-    color: #cf1f1f;
+    color: #000000;
     opacity: 0.7;
 }
 
