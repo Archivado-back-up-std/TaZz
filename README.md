@@ -1,43 +1,42 @@
-# Dashboard de Hackathones
+# Hackathon Dashboard
 
+## ✨ Features
 
-## ✨ Características
+- Organized table with hackathon information
+- Automatic countdown in days
+- Sakura blue bento design
+- 🚦 Color-coded urgency indicators:
+  - 🟢 Green: +30 days
+  - 🟡 Yellow: 8-30 days
+  - 🔴 Red: ≤7 days (with animation)
+  - ⚫ Gray: ended
 
-- Tabla organizada con información de hackathones
-- Cuenta regresiva automática en días
-- Diseño sakura azul bento
-- 🚦 Indicadores de urgencia por colores:
-  - 🟢 Verde: +30 días
-  - 🟡 Amarillo: 8-30 días
-  - 🔴 Rojo: ≤7 días (con animación)
-  - ⚫ Gris: finalizado
+## Usage
 
-## 🚀 Uso
+1. Open `index.html` in your browser
+2. Hackathons are automatically loaded from `hackathons.txt`
 
-1. Abre `index.html` en tu navegador
-2. Los hackathones se cargan automáticamente desde `hackathons.txt`
+## Adding Hackathons
 
-## 📝 Agregar hackathones
-
-Edita `hackathons.txt` con el formato:
-
-```
-fecha_envio,fecha_deadline,nombre_hackathon,premio,link
-```
-
-Ejemplo:
-```
-2026-02-01,2026-04-30,Hackathon Web3,$20,000,https://ejemplo.com
-```
-
-## 📁 Estructura
+Edit `hackathons.txt` using the format:
 
 ```
-📂 horario
-├── index.html          # Página principal
-├── script.js           # Lógica de cuenta regresiva
-├── style.css           # Estilos sakura azul bento
-└── hackathons.txt      # Datos de hackathones
+submission_date,deadline_date,hackathon_name,prize,link
+```
+
+Example:
+```
+2026-02-01,2026-04-30,Hackathon Web3,$20,000,https://example.com
+```
+
+## File Structure
+
+```
+📂 schedule
+├── index.html          # Main page
+├── script.js           # Countdown logic
+├── style.css           # Sakura blue bento styles
+└── hackathons.txt      # Hackathon data
 ```
 
 ---
