@@ -2,5 +2,4 @@
 2026-02-26,2026-02-26,Ideaton Stellar,$1.000,https://dorahacks.io/hackathon/buildonstellarchile/buidl
 2026-01-31,2026-02-07,Agentic,$30.000,https://dorahacks.io/hackathon/1932/build
 2026-02-01,2026-02-28,Redefine,$21.500,https://dorahacks.io/hackathon/redefine/build
-2026-01-24,2026-01-31,StreamLab,$10.000,https://dorahacks.io/hackathon/1933/build
 2026-12-12,2026-12-12,FFF,$0.000,https://www.google.com/
