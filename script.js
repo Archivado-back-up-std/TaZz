@@ -61,7 +61,7 @@ function crearTarjetaHackathon(hackathon) {
         <td class="premio">${hackathon.premio}</td>
         <td>${hackathon.fechaEnvio}</td>
         <td>${hackathon.fechaDeadline}</td>
-        <td class="dias-restantes ${claseEstado}">${diasRestantes === "Finalizado" ? diasRestantes : diasRestantes + " días"}</td>
+        <td class="dias-restantes ${claseEstado}">${diasRestantes === "Finalizado" ? diasRestantes : diasRestantes + " days"}</td>
         <td><a href="${hackathon.link}" target="_blank" class="btn-link">Link</a></td>
     `;
     
