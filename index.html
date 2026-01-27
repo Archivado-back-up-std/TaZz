@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Hackathones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌸 Dashboard de Hackathones</h1>
+            <p>Seguimiento de próximos hackathones con cuenta regresiva</p>
+        </header>
+
+        <main>
+            <div class="table-container">
+                <table id="hackathons-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Premio</th>
+                            <th>Fecha Envío</th>
+                            <th>Deadline</th>
+                            <th>Días Restantes</th>
+                            <th>Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody id="hackathons-container">
+                        <!-- Las filas de hackathones se insertarán aquí dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

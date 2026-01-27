@@ -1,0 +1,274 @@
+/* Estilo Sakura Azul Bento */
+:root {
+    --sakura-blue-dark: #2c5f8d;
+    --sakura-blue: #4a90c9;
+    --sakura-blue-light: #6fb3e0;
+    --sakura-pink: #e8b4d9;
+    --sakura-white: #f5f9fc;
+    --bento-shadow: rgba(76, 144, 201, 0.15);
+    --text-dark: #1a3a52;
+    --text-light: #5a7a92;
+    --success: #4ecca3;
+    --warning: #ffd93d;
+    --danger: #ff6b9d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f7 100%);
+    color: var(--text-dark);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header con estilo sakura */
+header {
+    background: linear-gradient(135deg, var(--sakura-blue-dark) 0%, var(--sakura-blue) 100%);
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px var(--bento-shadow);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '🌸';
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    font-size: 100px;
+    opacity: 0.1;
+    transform: rotate(-15deg);
+}
+
+header::after {
+    content: '🌸';
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    font-size: 120px;
+    opacity: 0.1;
+    transform: rotate(25deg);
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+header p {
+    color: var(--sakura-white);
+    font-size: 1.1em;
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+}
+
+/* Contenedor de tabla estilo bento */
+.table-container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px var(--bento-shadow);
+    overflow-x: auto;
+}
+
+/* Estilos de tabla */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+thead {
+    background: linear-gradient(135deg, var(--sakura-blue) 0%, var(--sakura-blue-light) 100%);
+}
+
+thead th {
+    color: white;
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+}
+
+thead th:first-child {
+    border-top-left-radius: 12px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 12px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e8f4f8;
+    transition: all 0.3s ease;
+}
+
+tbody tr:hover {
+    background: linear-gradient(90deg, #f5f9fc 0%, #e8f4f8 100%);
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(74, 144, 201, 0.1);
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody td {
+    padding: 20px 15px;
+    color: var(--text-dark);
+    font-size: 0.95em;
+}
+
+/* Estilos especiales para columnas */
+.nombre {
+    font-weight: 600;
+    color: var(--sakura-blue-dark);
+    font-size: 1.05em;
+}
+
+.premio {
+    font-weight: bold;
+    color: var(--sakura-blue);
+    font-size: 1.1em;
+}
+
+/* Días restantes con estados */
+.dias-restantes {
+    font-weight: bold;
+}
+
+.dias-restantes.activo {
+    color: var(--success);
+}
+
+.dias-restantes.proximo {
+    color: #d4a017;
+}
+
+.dias-restantes.urgente {
+    color: #d63384;
+    animation: pulse 2s infinite;
+}
+
+.dias-restantes.finalizado {
+    color: #666;
+    opacity: 0.7;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Enlace de texto simple */
+.btn-link {
+    color: var(--sakura-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+    color: var(--sakura-blue-dark);
+    text-decoration: underline;
+}
+
+/* Mensaje cuando no hay datos */
+.no-data {
+    text-align: center;
+    padding: 40px !important;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .table-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header {
+        padding: 30px 20px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+    
+    .table-container {
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    table {
+        font-size: 0.85em;
+    }
+    
+    thead th,
+    tbody td {
+        padding: 12px 8px;
+    }
+    
+    .btn-link {
+        font-size: 0.85em;
+    }
+}
+
+/* Scrollbar personalizado */
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: var(--sakura-white);
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: var(--sakura-blue-light);
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: var(--sakura-blue);
+}
