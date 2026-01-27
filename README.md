@@ -14,11 +14,11 @@
 ## Usage
 
 1. Open `index.html` in your browser
-2. Hackathons are automatically loaded from `hackathons.txt`
+2. Hackathons are automatically loaded from `hc.txt`
 
 ## Adding Hackathons
 
-Edit `hackathons.txt` using the format:
+Edit `hc.txt` using the format:
 
 ```
 submission_date,deadline_date,hackathon_name,prize,link
@@ -36,7 +36,7 @@ Example:
 ├── index.html          # Main page
 ├── script.js           # Countdown logic
 ├── style.css           # Sakura blue bento styles
-└── hackathons.txt      # Hackathon data
+└── hc.txt      # Hackathon data
 ```
 
 ---

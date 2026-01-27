@@ -15,11 +15,11 @@
 ## 🚀 Uso
 
 1. Abre `index.html` en tu navegador
-2. Los hackathones se cargan automáticamente desde `hackathons.txt`
+2. Los hackathones se cargan automáticamente desde `hc.txt`
 
 ## 📝 Agregar hackathones
 
-Edita `hackathons.txt` con el formato:
+Edita `hc.txt` con el formato:
 
 ```
 fecha_envio,fecha_deadline,nombre_hackathon,premio,link
@@ -37,7 +37,7 @@ Ejemplo:
 ├── index.html          # Página principal
 ├── script.js           # Lógica de cuenta regresiva
 ├── style.css           # Estilos sakura azul bento
-└── hackathons.txt      # Datos de hackathones
+└── hc.txt      # Datos de hackathones
 ```
 
 ---

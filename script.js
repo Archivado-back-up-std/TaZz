@@ -69,7 +69,7 @@ function crearTarjetaHackathon(hackathon) {
 }
 
 /**
- * Procesa el texto del archivo hackathons.txt y lo convierte en array de objetos
+ * Procesa el texto del archivo hc.txt y lo convierte en array de objetos
  * @param {string} texto - Contenido del archivo de texto
  * @returns {Array} - Array de objetos de hackathones
  */
@@ -108,8 +108,8 @@ async function cargarHackathons() {
     let hackathons = [];
     
     try {
-        // Intentar cargar desde el archivo hackathons.txt
-        const response = await fetch('hackathons.txt');
+        // Intentar cargar desde el archivo hc.txt
+        const response = await fetch('hc.txt');
         
         if (!response.ok) {
             throw new Error(`Error al cargar el archivo: ${response.status}`);
@@ -121,7 +121,7 @@ async function cargarHackathons() {
         console.log('Hackathones cargados desde archivo:', hackathons.length);
         
     } catch (error) {
-        console.warn('No se pudo cargar hackathons.txt, usando datos simulados:', error.message);
+        console.warn('No se pudo cargar hc.txt, usando datos simulados:', error.message);
         hackathons = hackathonsSimulados;
     }
     
